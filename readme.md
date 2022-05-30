@@ -8,6 +8,8 @@
 
 `npm i -g`
 
+`npm i -g https://github.com/ariassd/exchange-rates.git`
+
 # Call the package
 
 `exchange-rates`

@@ -7,14 +7,13 @@ module.exports = {
       axios
         .get(url)
         .then((res) => {
-          const data = res.data[0];
-
+          const data = res.data;
           resolve({
             exchangeCode: "0152",
             exchangeName: "BCR S.A.",
             origin: url,
-            buy: +data.compra,
-            sell: +data.venta,
+            buy: +data.compra.substring(0, 6),
+            sell: +data.venta.substring(0, 6),
             date: new Date(),
           });
         })
