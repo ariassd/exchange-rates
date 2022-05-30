@@ -10,7 +10,10 @@
 
 # Call the package
 
-`exchange-rate`
+`exchange-rates`
+`exchange-rates --ex=coopenae`
+`exchange-rates --ex=bcr`
+`exchange-rates --ex=bct`
 
 # Usage
 

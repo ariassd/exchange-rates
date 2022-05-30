@@ -4,7 +4,7 @@ const argv = require("minimist")(process.argv.slice(2));
 // bank codes
 // https://www.bccr.fi.cr/sistema-de-pagos/informaci%C3%B3n-general/participantes
 async function main() {
-  const available = ["coopenae", "bct"];
+  const available = ["coopenae", "bct", "bcr"];
   const query = argv.ex || "";
   // console.log("query", query);
   let exchangeRates = [];
@@ -20,6 +20,7 @@ async function main() {
 const exchanges = {
   coopenae: require("./modules/coopenae").getExchange,
   bct: require("./modules/bct").getExchange,
+  bcr: require("./modules/bcr").getExchange,
 };
 
 main();
