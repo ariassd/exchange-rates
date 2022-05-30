@@ -9,6 +9,7 @@ module.exports = {
         .then((res) => {
           const data = res.data;
           resolve({
+            statusCode: 200,
             exchangeCode: "0152",
             exchangeName: "BCR S.A.",
             origin: url,
